@@ -1,0 +1,194 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f3f4f6;
+    color: #333;
+}
+
+/* Header */
+header {
+    background: linear-gradient(to right, #ff66b2, #8A2BE2, #00BFFF);
+    padding: 20px;
+    color: white;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: 'Georgia', serif;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Navigation Links */
+.nav-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.nav-links a:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+}
+
+.juniors-btn {
+    background-color: #ff69b4;
+    color: white;
+}
+
+.seniors-btn {
+    background-color: #4682b4;
+    color: white;
+}
+
+.signup-btn {
+    background-color: #ff1493;
+    color: white;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(to right, #ff66b2, #8A2BE2, #00BFFF);
+    color: white;
+    text-align: center;
+    padding: 50px 15px;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    font-family: 'Georgia', serif;
+    font-style: italic;
+    color: #FFD700;
+}
+
+.hero .subtext {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.hero-img {
+    width: 60%;
+    max-width: 800px;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Sections */
+.section {
+    padding: 40px 15px;
+    text-align: center;
+    background-color: white;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+#juniors {
+    background: linear-gradient(to right, #ffb6c1, #ff69b4);
+    color: white;
+}
+
+#seniors {
+    background: linear-gradient(to right, #87cefa, #4682b4);
+    color: white;
+}
+
+.section:hover {
+    transform: scale(1.05);
+}
+
+.section h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    color: #8A2BE2;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.section p {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.section-img {
+    width: 400px;
+    height: 250px;
+    border-radius: 10px;
+}
+
+footer {
+    background: #8A2BE2;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+/* Responsive Menu */
+.menu-toggle {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background: #8A2BE2;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 200px;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+}
