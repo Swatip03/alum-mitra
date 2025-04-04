@@ -24,7 +24,7 @@ Built with the good ol’ web trifecta:
 
 ## 🖥️ How to Run AlumMitra Locally
 
-1. Clone the repo  
-   ```bash
-   git clone https://github.com/your-username/alum-mitra.git
+CheckOut the live Website at::
+https://swatip03.github.io/alum-mitra/
+   
 
