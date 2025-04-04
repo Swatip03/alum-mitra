@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - AlumMitra</title>
+    <link rel="stylesheet" href="signup.css">
+    <script defer src="signup.js"></script>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <h1>AlumMitra</h1>
+            <a href="index.html" class="home-btn">🏠 Home</a>
+        </nav>
+    </header>
+
+    <section class="signup-container">
+        <div class="signup-box">
+            <h2>Create Your Profile</h2>
+            <p>Connect with mentors and shape your future!</p>
+            
+            <form id="signup-form">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" placeholder="Enter your name" required>
+
+                <label for="year">College Year</label>
+                <select id="year" required>
+                    <option value="" disabled selected>Select your year</option>
+                    <option value="1">1st Year</option>
+                    <option value="2">2nd Year</option>
+                    <option value="3">3rd Year</option>
+                    <option value="4">4th Year</option>
+                </select>
+
+                <label for="major">Major</label>
+                <input type="text" id="major" placeholder="Your field of study" required>
+
+                <label for="interests">Interests</label>
+                <input type="text" id="interests" placeholder="E.g., AI, Web Dev, Finance" required>
+
+                <button type="submit" class="join-btn">Join Now</button>
+            </form>
+        </div>
+    </section>
+
+</body>
+</html>
